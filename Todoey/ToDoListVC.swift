@@ -44,10 +44,7 @@ class ToDoListVC: UITableViewController {
         
      tableView.deselectRow(at: indexPath, animated: true)
         
-        
-        
     }
-
 
 
 }
