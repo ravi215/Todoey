@@ -47,5 +47,27 @@ class ToDoListVC: UITableViewController {
     }
 
 
+// MARK adding new item to the list
+    
+    @IBAction func addNewItemInToDo(_ sender: UIBarButtonItem) {
+        
+        let alert = UIAlertController(title: "add new item to Todoey", message: "", preferredStyle: .alert)
+        let action = UIAlertAction(title: "add item", style: .default) { (Action) in
+            print("success")
+    
+        }
+        
+        alert.addTextField { (alertTextField) in
+            alertTextField.placeholder = "add new items"
+            print("new data entry detected")
+        }
+        
+        
+        alert.addAction(action)
+        present(alert, animated: true, completion: nil)
+        
+        
+        
+    }
 }
 
